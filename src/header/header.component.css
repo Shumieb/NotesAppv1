@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-heading {
+    width: 100%;
+    background-color: bisque;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+li {
+    padding: 3px;
+    margin-right: 12px;
+    font-size: 20px;
+}
