@@ -29,4 +29,11 @@ export class NotesDetailsComponent {
     //console.log(this.currentNote?.title);
   }
 
+  editNote() {
+    console.log(this.currentNoteId);
+  }
+
+  deleteNote() {
+    console.log(this.currentNoteId);
+  }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { AddNoteComponent } from '../add-note/add-note.component';
 import { NotesListComponent } from '../notes-list/notes-list.component';
 
@@ -10,5 +11,9 @@ import { NotesListComponent } from '../notes-list/notes-list.component';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
+  router = inject(Router);
 
+  ShowAddNewNoteForm() {
+    this.router.navigateByUrl("/addNewNote");
+  }
 }
