@@ -5,6 +5,7 @@ footer {
     background-color: #F29F8D;
     font-size: 20px;
     padding: 10px;
+    min-width: 20vh;
 }
 
 p {

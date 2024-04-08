@@ -4,6 +4,11 @@
     margin: 18px auto;
     border-radius: 6px;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.note-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .note-card-title {
@@ -38,4 +43,9 @@
     padding: 6px 12px;
     cursor: pointer;
     color: #3B2F40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.note-card-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
