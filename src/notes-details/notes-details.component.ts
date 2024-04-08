@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Note, Notes } from '../libs/noteInterface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-notes-details',
@@ -10,12 +11,15 @@ import { Note, Notes } from '../libs/noteInterface';
 })
 
 export class NotesDetailsComponent {
+  router = inject(Router);
+
   currentNote?: Note = { id: "", title: "", description: "" };
   currentNoteId?: string = "";
   title?: string = "";
   created?: string = "";
   updated?: string = "";
   description?: string = "";
+
 
   @Input()
   set id(noteId: string) {
@@ -30,7 +34,7 @@ export class NotesDetailsComponent {
   }
 
   editNote() {
-    console.log(this.currentNoteId);
+    this.router.navigateByUrl(`/editNote/${this.currentNoteId}`);
   }
 
   deleteNote() {

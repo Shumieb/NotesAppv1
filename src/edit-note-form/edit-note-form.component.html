@@ -1,0 +1,26 @@
+<form [formGroup]="editForm">
+    <h3 class="form-heading">Edit Note</h3>
+    <hr>
+    <div>
+        <p><strong>Created:</strong> {{editCreated}}</p>
+    </div>
+    <div>
+        @if(editUpdated){
+        <p><strong>Last Updated:</strong> {{editUpdated}}</p>
+        }
+    </div>
+    <div class="input-section">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class="input-title" formControlName="title">
+    </div>
+    <div class="input-section">
+        <label for="note">Note:</label>
+        <textarea name="note" id="note" cols="30" rows="5" class="input-note" formControlName="description"></textarea>
+    </div>
+    <div class="form-edit-btn">
+        <input type="submit" value="Edit Note" class="edit-btn">
+    </div>
+    <div class="form-clear-btn">
+        <input type="button" value="Clear Form" class="clear-btn">
+    </div>
+</form>>
