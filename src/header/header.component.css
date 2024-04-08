@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
 .header-heading {
     width: 100%;
     background-color: bisque;
