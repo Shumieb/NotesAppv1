@@ -1,0 +1,40 @@
+.note-card {
+    list-style: none;
+    background-color: #d81b60;
+    padding: 6px 12px;
+    margin: 18px auto;
+    border-radius: 6px;
+    color: white;
+}
+
+.note-card-title {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.note-card-details {
+    font-size: 18px;
+}
+
+.note-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+}
+
+.note-card-date {
+    font-style: italic;
+    color: #fce4ec;
+    font-size: 18px;
+}
+
+.note-card-btn {
+    font-size: 18px;
+    border-radius: 6px;
+    border: 2px solid bisque;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #d81b60;
+}

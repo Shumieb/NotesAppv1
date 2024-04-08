@@ -1,0 +1,27 @@
+.notes-list {
+    width: 80%;
+    margin: 40px auto;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.notes-list-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 4px;
+    margin: 0 auto;
+}
+
+hr {
+    border: 1px solid black;
+    width: 45px;
+    margin: 0 auto 16px auto;
+    padding: 0;
+}
+
+ul {
+    padding: 6px;
+    margin: 5px auto;
+}
