@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-note-card',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './note-card.component.css'
 })
 export class NoteCardComponent {
+  router = inject(Router);
+  slug = "one";
+
+  visitDetailsPage() {
+    this.router.navigateByUrl(`/noteDetail/${this.slug}`);
+  }
 
 }
