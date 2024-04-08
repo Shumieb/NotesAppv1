@@ -1,14 +1,13 @@
 <section class="note-details-container">
-    <h3 class="note-detail-title">Title</h3>
-    <p class="details-created"><span>Created:</span> 12 January 2024</p>
-    <p class="details-updated"><span>Last Updated:</span> Today</p>
+    <h3 class="note-detail-title">{{title }}</h3>
+    <p class="details-created"><span>Created:</span> {{created}}</p>
+    @if(updated){
+    <p class="details-updated"><span>Last Updated:</span> {{updated}}</p>
+    }
     <div class="details-hr">
         <hr>
     </div>
-    <p class="note-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Error modi, provident, vel repellendus impedit consectetur in est molestias dicta placeat a,
-        quisquam ipsa quis pariatur voluptates temporibus? Tenetur, facilis dicta!
-    </p>
+    <p class="note-detail">{{description}} </p>
     <div class="details-btn">
         <input type="button" value="Edit Note" class="edit-btn">
         <input type="button" value="Delete Note" class="delete-btn">

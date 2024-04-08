@@ -2,9 +2,8 @@
     <h3 class="notes-list-header">Notes</h3>
     <hr>
     <ul>
-        <app-note-card />
-        <app-note-card />
-        <app-note-card />
-        <app-note-card />
+        @for (note of notes; track note.id){
+        <app-note-card [note]="note" />
+        }
     </ul>
 </section>

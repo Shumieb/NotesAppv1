@@ -1,7 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
-import { Routes, provideRouter } from '@angular/router';
+import { Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NotesDetailsComponent } from './notes-details/notes-details.component';
@@ -15,6 +15,6 @@ const routes: Routes = [
 
 
 bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes)],
+  providers: [provideRouter(routes, withComponentInputBinding())],
 })
   .catch((err) => console.error(err));

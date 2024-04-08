@@ -1,11 +1,9 @@
 <li class="note-card">
-    <p class="note-card-title">Title</p>
-    <p class="note-card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Consequuntur qui iure sed adipisci, recusandae quos quod ipsa
-        quae veniam quam.
+    <p class="note-card-title">{{note.title}}</p>
+    <p class="note-card-details">{{note.description}}
     </p>
     <div class="note-card-footer">
-        <p class="note-card-date">Created: 3 days ago</p>
+        <p class="note-card-date">Created: {{note.created}}</p>
         <div>
             <input type="button" value="View Details" class="note-card-btn" (click)="visitDetailsPage()" />
         </div>

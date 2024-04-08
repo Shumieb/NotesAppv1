@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Note } from '../libs/noteInterface';
 
 @Component({
   selector: 'app-add-note',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './add-note.component.css'
 })
 export class AddNoteComponent {
+  newNote: Note = { id: "", title: "", description: "" };
+
 
 }
