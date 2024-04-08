@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
-    font-size: 18px;
-    padding: 8px;
-    margin-top: 12px;
+    background-color: #F29F8D;
+    font-size: 20px;
+    padding: 10px;
 }
 
 p {

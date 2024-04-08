@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .header-heading {
     width: 100%;
-    background-color: bisque;
+    background-color: #F29F8D;
     padding: 5px;
     text-align: center;
     font-weight: normal;
